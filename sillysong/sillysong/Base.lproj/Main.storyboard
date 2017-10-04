@@ -35,17 +35,6 @@
                                 <color key="textColor" red="1" green="0.22644616579999999" blue="0.38029979489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Excited to see a song on you.......Just simply type in your name and we will see what we can do :) :) :)" translatesAutoresizingMaskIntoConstraints="NO" id="Vd7-ek-Fub">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.22907094759999999" green="1" blue="0.96941137990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="hgn-mB-alF"/>
-                                    <constraint firstAttribute="height" constant="128" id="iqW-iT-xZl"/>
-                                </constraints>
-                                <color key="textColor" red="1" green="0.22644616579999999" blue="0.38029979489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER YOUR NAME !!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NSc-6g-flm">
                                 <rect key="frame" x="70" y="167" width="235" height="30"/>
                                 <color key="backgroundColor" red="0.5353624496677144" green="0.97655881583534088" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,24 +46,52 @@
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="oa2-nT-cbY"/>
                                 </connections>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Excited to see a song on you.......Just simply type in your name and we will see what we can do :) :) :)" translatesAutoresizingMaskIntoConstraints="NO" id="Vd7-ek-Fub">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.22907094759999999" green="1" blue="0.96941137990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="hgn-mB-alF"/>
+                                    <constraint firstAttribute="height" constant="128" id="iqW-iT-xZl"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.22644616579999999" blue="0.38029979489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Iy-dU-lqG">
+                                <rect key="frame" x="143" y="205" width="89" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CREATE">
+                                    <color key="titleColor" red="0.080527377280276258" green="0.1401365865088765" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewLL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pxH-A7-OLI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.22907094755017321" green="1" blue="0.96941137986915371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.15734345249814996" green="0.6262353911748556" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jpK-i8-4IZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="51K-8q-PlM"/>
+                            <constraint firstItem="2Iy-dU-lqG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="185" id="AHC-nB-1c2"/>
+                            <constraint firstItem="2Iy-dU-lqG" firstAttribute="width" secondItem="NSc-6g-flm" secondAttribute="width" id="CK0-rE-36V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NSc-6g-flm" secondAttribute="trailing" constant="70" id="E6C-40-NmK"/>
                             <constraint firstItem="jpK-i8-4IZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="In5-W2-tbe"/>
                             <constraint firstItem="Vd7-ek-Fub" firstAttribute="top" secondItem="NSc-6g-flm" secondAttribute="bottom" constant="72" id="JB5-Be-DHQ"/>
                             <constraint firstItem="NSc-6g-flm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="LR7-jk-9CK"/>
+                            <constraint firstItem="2Iy-dU-lqG" firstAttribute="height" secondItem="NSc-6g-flm" secondAttribute="height" id="Oyb-9x-lKt"/>
                             <constraint firstItem="Vd7-ek-Fub" firstAttribute="centerX" secondItem="NSc-6g-flm" secondAttribute="centerX" id="PDR-FV-MeN"/>
                             <constraint firstItem="NSc-6g-flm" firstAttribute="top" secondItem="jpK-i8-4IZ" secondAttribute="bottom" constant="72" id="cSQ-vl-YYc"/>
+                            <constraint firstItem="2Iy-dU-lqG" firstAttribute="top" secondItem="NSc-6g-flm" secondAttribute="bottom" constant="8" id="idH-oa-VGR"/>
                             <constraint firstItem="NSc-6g-flm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oWE-KW-CJf"/>
+                            <constraint firstItem="2Iy-dU-lqG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vXe-YI-rDM"/>
+                            <constraint firstItem="2Iy-dU-lqG" firstAttribute="centerX" secondItem="NSc-6g-flm" secondAttribute="centerX" id="yum-SD-R9i"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="lyricsView" destination="Vd7-ek-Fub" id="hN6-Qt-Y7C"/>
                         <outlet property="nameView" destination="NSc-6g-flm" id="gOK-hP-8rU"/>
+                        <outlet property="viewL" destination="2Iy-dU-lqG" id="AsY-hb-j21"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

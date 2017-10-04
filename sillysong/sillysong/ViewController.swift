@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nameView: UITextField!
     @IBOutlet weak var lyricsView: UITextView!
+    @IBOutlet weak var viewL: UIButton!
     
     
     
@@ -39,6 +40,11 @@ class ViewController: UIViewController {
             lyricsView.text = lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: name)
         }
     }
+    @IBAction func viewLL(_ sender: Any) {
+        displayLyrics((Any).self)
+    }
+    
+    
     
     
     let bananaFanaTemplate = [

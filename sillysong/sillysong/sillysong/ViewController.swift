@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         if let name = nameView.text {
             lyricsView.text = lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: name)
         }
+        
     }
     
     

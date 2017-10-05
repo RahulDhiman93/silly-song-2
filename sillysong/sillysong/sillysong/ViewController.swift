@@ -16,17 +16,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var lyricsView: UITextView!
     @IBOutlet weak var viewLL: UIButton!
     
+ 
     
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    
     
     @IBAction func reset(_ sender: Any) {
         nameView.text?.removeAll()
@@ -39,9 +34,19 @@ class ViewController: UIViewController {
         if let name = nameView.text {
             lyricsView.text = lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: name)
         }
+    }}
+
+
+extension ViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return false
         
     }
-    
+}
+
     
     
     let bananaFanaTemplate = [
@@ -63,21 +68,15 @@ class ViewController: UIViewController {
     
     func shortname(name:String)->String{
         
-        var lowername = name.lowercased()
+        let lowercase = name.lowercased()
+        let vowelSet  = NSCharacterSet(charactersIn: "aeiou")
         
-        
-        
-        let vowels : [Character] = ["a","e","i","o","u"]
-        
-        for index in vowels {
-            if lowername.characters.first != index{
-                lowername.remove(at: lowername.startIndex)
-                break
-        }
+        if let Range = lowercase.rangeOfCharacter(from: vowelSet as CharacterSet) {
+            return lowercase.substring(from: Range.lowerBound)
         }
         
-      return lowername
+        return lowercase
     }
 
-}
+
 

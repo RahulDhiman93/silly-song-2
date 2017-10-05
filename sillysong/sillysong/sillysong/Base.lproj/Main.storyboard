@@ -35,7 +35,7 @@
                                 <color key="textColor" red="1" green="0.22644616579999999" blue="0.38029979489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="HERE GOES YOUR SONG !!" translatesAutoresizingMaskIntoConstraints="NO" id="Vd7-ek-Fub">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="HERE GOES YOUR SONG !!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vd7-ek-Fub">
                                 <rect key="frame" x="67" y="165" width="240" height="110"/>
                                 <color key="backgroundColor" red="0.22907094759999999" green="1" blue="0.96941137990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
